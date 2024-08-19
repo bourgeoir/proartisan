@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #36d1dc, #5b86e5);
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: 20px;
+}
+label{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+span{
+    font-size: 30px;
+    color: red;
+}
+
+.contactform {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.logom img {
+    display: block;
+    margin: 0 auto 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.inputboite {
+    width: 100%;
+}
+
+.inputboite1, .inputboit2 {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.inputboit1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputboit1 input, .inputboit2 input {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+.inputboit1 input:focus, .inputboit2 input:focus {
+    border-color: #ff7e5f;
+}
+
+.cree {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cree a {
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+.annuler {
+    background: #ff6f6f;
+}
+
+.enregistrer {
+    background: #070ac2fb;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+.enregistrer :hover{
+    background: #ff6f6f;
+    transition: background-color 0.3s;
+}
+
+.cree :hover {
+    background: #feb47b;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 600px) {
+    .contactform {
+        padding: 20px;
+    }
+
+    .inputboit1 input, .inputboit2 input {
+        padding: 8px;
+        margin: 3px 0;
+    }
+
+    .cree a {
+        padding: 8px 15px;
+    }
+}
